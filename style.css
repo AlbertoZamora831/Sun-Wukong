@@ -1,7 +1,3 @@
-body {
-    text-align: center;
-}
-
 :root {
     /* color of text for walter white's activity.
        If you decide not to duplicate & create your own,
@@ -10,6 +6,9 @@ body {
 }
 
 /* edit the body as you'd like, color, images, aligning */
+body {
+    text-align: center;
+}
 
 
 
@@ -30,7 +29,6 @@ h2 {
 }
 
 
-
 /*** IMAGES ***/
 /* Your row = container
      Your column = items
@@ -38,9 +36,28 @@ h2 {
      justy-content, align-items, gap*/
 
 
+#first-row img,
+#second-row img,
+#third-row img,
+#fourth-row img {
+    height: 300px;
+}
+
 
 img {
     height: 250px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.column {
+    margin: 25px 0px;
 }
 
 
@@ -51,17 +68,17 @@ p {
      If you decide not to duplicate & create your own,
      don't forget to change the font size */
     font-size: 25px;
+    margin: 0px 10%;
 }
-
-
-/*** BUTTONS & SQUARE ***/
-/* To align your images without text-align
-     Look into display block & box model */
-
-/* You can give divs a property of height */
 
 
 
 /*** FOOTER ***/
 /* To remove the bullet pts, look into list-style-type
      To have them all in one line, look into display inline */
+
+footer p {
+    color: black;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
